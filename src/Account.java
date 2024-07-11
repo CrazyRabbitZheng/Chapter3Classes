@@ -4,11 +4,15 @@
 public class Account {
     private String name;
 
-    public void setName(String name) {
+    public Account(String name) {
         this.name = name;
     }
 
-    public String getName() {
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getName(){
         return name;
     }
 }

@@ -6,14 +6,10 @@ import java.util.Scanner;
  */
 public class AccountTest {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Account account1 = new Account("Jane Mary");
+        Account account2 = new Account("Harry Potter");
 
-        Account myAccount = new Account();
-        System.out.printf("Initial name is %s\n", myAccount.getName());
-
-        System.out.println("Please enter name ");
-        String theName = sc.nextLine();
-        myAccount.setName(theName);
-        System.out.printf("%nAccount name is %s\n", myAccount.getName());
+        System.out.printf("account1 name: %s\n", account1.getName());
+        System.out.printf("account2 name: %s\n", account2.getName());
     }
 }
