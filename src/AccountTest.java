@@ -30,5 +30,11 @@ public class AccountTest {
        System.out.printf("%s balance: $%.2f%n", account1.getName(), account1.getBalance());
        System.out.printf("%s balance: $%.2f%n", account2.getName(), account2.getBalance());
 
+       System.out.println("How much would you like to withdraw?");
+       double withdrawAmount1 = input.nextDouble();
+       account1.withdraw(withdrawAmount1);
+
+       System.out.printf("%s balance: $%.2f%n", account1.getName(), account1.getBalance());
+
     }
 }
